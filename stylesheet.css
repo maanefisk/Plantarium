@@ -1,0 +1,42 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0px;
+}
+
+.page {
+    background-color: cornflowerblue;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-auto-rows: 100px 500px 100px 1fr;
+    grid-template-areas:'page header page2'
+                        'page gameWindow page2'
+                        'page menu page2'
+                        'page null page2';
+    grid-area: page;
+}
+
+.page2 {
+    background-color: lightgreen;
+    grid-area: page2;
+}
+
+.header {
+    grid-area: header;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.gameWindow {
+    background-color: lightblue;
+    grid-area: gameWindow;
+}
+
+.menu {
+    background-color: lightcyan;
+    grid-area: menu;
+    border: solid blue 2px;
+}
