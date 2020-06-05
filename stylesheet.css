@@ -28,6 +28,7 @@ body {
     grid-area: header;
     padding-top: 50px;
     font-size: 50px;
+    color: green;
 }
 
 .gameWindow {
@@ -35,10 +36,49 @@ body {
     grid-area: gameWindow;
 }
 
+.gameBg {
+    position: absolute;
+    z-index: 1;
+}
+
+.flower {
+    position: absolute;
+    z-index: 2;
+}
+
 .menu {
     background-color: lightcyan;
     grid-area: menu;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: solid lightpink 2px;
+}
+
+.water {
+    background-color: red;
+    border: solid black 2px;
+}
+
+.feeder {
+    background-color: orange;
+    border: solid black 2px;
+}
+
+.cutters {
+    background-color: yellow;
+    border: solid black 2px;
+}
+
+.prune {
+    background-color: seagreen;
+    border: solid black 2px;
+}
+
+.notebook {
+    background-color: dodgerblue;
+    border: solid black 2px;
+}
+
+.compost {
+    background-color: indigo;
+    border: solid black 2px;
 }
