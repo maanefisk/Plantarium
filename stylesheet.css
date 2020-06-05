@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-    background-color: cornflowerblue;
+    background-color: rgb(129, 194, 231);
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 800px 1fr;
@@ -38,5 +38,7 @@ body {
 .menu {
     background-color: lightcyan;
     grid-area: menu;
-    border: solid blue 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: solid lightpink 2px;
 }
