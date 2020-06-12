@@ -62,32 +62,31 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.buttons {
+    cursor: pointer;
+    border: solid black 2px;
+}
+
 .water {
     background-color: red;
-    border: solid black 2px;
 }
 
 .feeder {
     background-color: orange;
-    border: solid black 2px;
 }
 
 .cutters {
     background-color: yellow;
-    border: solid black 2px;
 }
 
 .prune {
     background-color: seagreen;
-    border: solid black 2px;
 }
 
 .notebook {
     background-color: dodgerblue;
-    border: solid black 2px;
 }
 
 .compost {
     background-color: indigo;
-    border: solid black 2px;
 }
