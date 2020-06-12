@@ -32,6 +32,7 @@ body {
 }
 
 .gameWindow {
+    display: inline-block;    
     background-color: lightblue;
     grid-area: gameWindow;
 }
@@ -42,8 +43,10 @@ body {
 }
 
 .flower {
+    grid-area: gameWindow;
     position: absolute;
     z-index: 2;
+    bottom: 210px;
 }
 
 .menu {
