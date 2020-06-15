@@ -52,7 +52,22 @@ body {
 }
 
 .flower1 {
-    
+    display: block;
+}
+.flower2 {
+    display: none;
+}
+.flower3 {
+    display: none;
+}
+.flower4 {
+    display: none;
+}
+.flower5 {
+    display: none;
+}
+.flower6 {
+    display: none;
 }
 
 .menu {
