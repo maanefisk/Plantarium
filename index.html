@@ -10,20 +10,21 @@
     <div class="page">
         <div class="header">Plantarium</div>
         <div class="gameWindow">
-            <img class="flower flower1" src="Test_Flower01.png"/>
-            <img class="flower flower2" src="Test_Flower02.png"/>
-            <img class="flower flower3" src="Test_Flower03.png"/>
-            <img class="flower flower4" src="Test_Flower04.png"/>
-            <img class="flower flower5" src="Test_Flower05.png"/>
-            <img class="flower flower6" src="Test_Flower06.png"/>
+            <img id="flowerOne" class="flower flower1" src="Test_Flower01.png"/>
+            <img id="flowerTwo" class="flower flower2" src="Test_Flower02.png"/>
+            <img id="flowerThree" class="flower flower3" src="Test_Flower03.png"/>
+            <img id="flowerFour" class="flower flower4" src="Test_Flower04.png"/>
+            <img id="flowerSix" class="flower flower5" src="Test_Flower05.png"/>
+            <img id="flowerSeven" class="flower flower6" src="Test_Flower06.png"/>
+            <div id="testGameBg"></div>
             <svg class="gameBg" height="500px" width="800px">
-                <circle cx="500" cy="100" r="40" stroke="rgb(186, 226, 203)" stroke-width="20" fill="yellow" />
+                <circle cx="500" cy="100" r="40" stroke="rgb(213, 255, 232)" stroke-width="20" fill="rgb(255, 251, 213)" />
                 <rect x="0" y="400" width="800" height="100" fill="green"/> 
             </svg>
         </div>
        
         <div class="menu">
-            <div onclick="growPlant()" class="water buttons">Water</div>
+            <div id="flowerOne" onclick="growPlant()" class="water buttons">Water</div>
             <div class="feeder buttons">Feeder</div>
             <div class="cutters buttons">Cutters</div>
             <div class="prune buttons">Prune</div>

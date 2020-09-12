@@ -33,8 +33,17 @@ body {
 
 .gameWindow {
     display: inline-block;    
-    background-color: lightblue;
+    background-color: rgb(211, 244, 255);
     grid-area: gameWindow;
+}
+
+#testGameBg {
+    position: absolute;
+    z-index: 3;
+    background-color: purple;
+    height: 80px;
+    width: 800px;
+    margin-top: 420px;
 }
 
 .gameBg {
@@ -83,7 +92,7 @@ body {
 }
 
 .water {
-    background-color: red;
+    background-color: turquoise;
 }
 
 .feeder {
@@ -91,11 +100,12 @@ body {
 }
 
 .cutters {
-    background-color: yellow;
+    background-color: rgb(255, 111, 111);
+    ;
 }
 
 .prune {
-    background-color: seagreen;
+    background-color: rgb(255, 164, 111);
 }
 
 .notebook {
