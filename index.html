@@ -14,8 +14,8 @@
             <img id="flowerTwo" class="flower flower2" src="Test_Flower02.png"/>
             <img id="flowerThree" class="flower flower3" src="Test_Flower03.png"/>
             <img id="flowerFour" class="flower flower4" src="Test_Flower04.png"/>
-            <img id="flowerSix" class="flower flower5" src="Test_Flower05.png"/>
-            <img id="flowerSeven" class="flower flower6" src="Test_Flower06.png"/>
+            <img id="flowerFive" class="flower flower5" src="Test_Flower05.png"/>
+            <img id="flowerSix" class="flower flower6" src="Test_Flower06.png"/>
             <div id="testGameBg"></div>
             <svg class="gameBg" height="500px" width="800px">
                 <circle cx="500" cy="100" r="40" stroke="rgb(213, 255, 232)" stroke-width="20" fill="rgb(255, 251, 213)" />
@@ -36,6 +36,13 @@
     
     <script>
         var c = 0;
+        var flowerOne = document.getElementById("flowerOne");
+        var flowerTwo = document.getElementById("flowerTwo");
+        var flowerThree = document.getElementById("flowerThree");
+        var flowerFour = document.getElementById("flowerFour");
+        var flowerFive = document.getElementById("flowerFive");
+        var flowerSix = document.getElementById("flowerSix");
+
         function growPlant() {
             if (c<6) {
                 c++;
@@ -47,20 +54,35 @@
         function updateFlower() {
             
             if (c==1) {
+                flowerSix.style.display = "none";
+                flowerOne.style.display = "block";
                 console.log("First");
             }
             else if (c==2) {
+                flowerOne.style.display = "none";
+                flowerTwo.style.display = "block";
                 console.log("Second");
             }
             else if (c==3) {
+                flowerTwo.style.display = "none";
+                flowerThree.style.display = "block";
                 console.log("Third");
             }
             else if (c==4) {
+                flowerThree.style.display = "none";
+                flowerFour.style.display = "block";
                 console.log("Fourth");
             }
             else if (c==5) {
+                flowerFour.style.display = "none";
+                flowerFive.style.display = "block";
                 console.log("Fifth");
-            } else console.log("Sixth");
+            } 
+            else {
+                flowerFive.style.display = "none";
+                flowerSix.style.display = "block";
+                console.log("Sixth");
+            }
         }
 
 
